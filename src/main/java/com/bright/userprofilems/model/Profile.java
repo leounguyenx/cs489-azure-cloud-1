@@ -1,6 +1,7 @@
 package com.bright.userprofilems.model;
 
 import jakarta.persistence.*;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
@@ -8,6 +9,7 @@ import java.time.LocalDate;
 @Entity
 @Table(name = "profiles")
 @NoArgsConstructor
+@Data
 public class Profile {
 
     @Id
