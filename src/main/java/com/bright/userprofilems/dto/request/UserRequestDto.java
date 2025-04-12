@@ -12,8 +12,8 @@ public record UserRequestDto(
         @NotBlank(message = "username cannot be blank/empty/null")
         @Pattern(regexp = "^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[?*+!])[A-Za-z0-9?*+!]{4,8}$")
         String password,
-        @Valid
         @NotNull(message = "profile cannot be null")
+        @Valid
         ProfileRequestDto profileRequestDto
 ) {
 }
